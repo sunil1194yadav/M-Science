@@ -19,7 +19,7 @@ try:
     "SERVER=NS104787;"
     "DATABASE=vroom_fdb08a2db31047b9b0d6a2d9824abcd2;" #carvana_b7850b5fa4924e1186551da818f84f7f
     "UID=mscience;"
-    "PWD=hT$Aey4l%NUs%^e;"
+    "PWD=*********;"
  )
 
  cursor = connection.cursor()
@@ -71,4 +71,8 @@ def sent_mail(final_content ):
  ob.sendmail('sunil.yadav@sequentum.com', ['hemant.kumar@sequentum.com','sunil.yadav@sequentum.com','tanuj.sharma@sequentum.com','bhawana.srivastava@sequentum.com','gaurav.bisht@sequentum.com ','karmveer.yadav@sequentum.com '], message.as_string())
  print("Mail sent")
  ob.quit()
-sent_mail(final_content1)
+if final_content1:
+ sent_mail(final_content1)
+else:
+       print("sunil")
+
